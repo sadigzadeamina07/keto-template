@@ -11,7 +11,7 @@
     <link href="./src/output.css" rel="stylesheet">
     <style>
         .container {
-            max-width: 1300px;
+            max-width: 1100px;
         }
     </style>
 </head>
@@ -19,15 +19,21 @@
 <body class="bg-white">
     <header class="bg-white py-[15px]">
         <div class="container mx-auto">
-            <div class="flex justify-between md:mx-[70px]">
+            <div class="flex justify-between ">
                 <img src="img/logo.png" class="px-[15px]" alt="">
                 <ul class="hidden md:flex uppercase font-semibold md:gap-[40px]  px-[15px] md:items-center">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Our room</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li class="active hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a
+                            href="">Home</a></li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">About</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Our
+                            room</a></li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Gallery</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Blog</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Contact
+                            Us</a></li>
                 </ul>
                 <div class=" md:hidden  mr-[15px]  text-red-500  my-auto">
                     <i class="fa-solid fa-bars text-4xl"></i>
@@ -76,6 +82,57 @@
 
         </div>
     </main>
+    <footer>
+        <div class="bg-[#0f1521] text-center md:text-left mt-[90px]">
+            <div class="container mx-auto mx-[50px] py-[60px] ">
+                <div class="grid grid-cols-1 md:grid-cols-3  text-white">
+                    <div class="flex flex-col px-[15px]">
+                        <h1
+                            class="text-2xl font-bold border-b-2 border-b-[#fe0000] w-fit mx-auto mb-[15px]   md:mx-0 ">
+                            Contact US</h1>
+                        <a href="" class="pb-[20px]"> <i class="fa-solid fa-location-dot mr-[10px]"></i>Address</a>
+                        <a href="tel:+01 1234569540" class="pb-[20px]"><i
+                                class="fa-solid fa-mobile-screen mr-[10px]"></i>+01 1234569540</a>
+                        <a href="tel:+01 1234569540" class="pb-[20px]"><i
+                                class="fa-solid fa-envelope mr-[10px]"></i>demo@gmail.com</a>
+                    </div>
+                    <div class="flex flex-col px-[15px]">
+                        <h1 class="text-2xl font-bold border-b-2 border-b-[#fe0000] w-fit mx-auto  md:mx-0 mb-[15px]">Menu Link
+                        </h1>
+                        <ul>
+                            <li class="text-[#fe0000] mb-[5px]"><a href="">Home</a></li>
+                            <li class="hover:text-[#fe0000] mb-[5px]"><a href="">About</a></li>
+                            <li class="hover:text-[#fe0000] mb-[5px]"><a href="">Our Room</a></li>
+                            <li class="hover:text-[#fe0000] mb-[5px]"><a href="">Gallery</a></li>
+                            <li class="hover:text-[#fe0000] mb-[5px]"><a href="">Blog</a></li>
+                            <li class="hover:text-[#fe0000]"><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col px-[15px] mx-auto md:mx-0">
+                        <h1 class="text-2xl font-bold border-b-2 border-b-[#fe0000] w-fit mx-auto  md:mx-0 mb-[15px]">News letter
+                        </h1>
+                        <input type="text" class="bg-white text-black px-[19px] py-[9px] mb-[20px] " placeholder="Enter your email">
+                        <button class="uppercase  bg-white font-semibold text-[#ff140d] w-fit py-[10px] px-[25px]">subscribe</button>
+                        <div class="flex gap-5 pt-[24px]">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="border-y-3 border-y-[#fe0000]">
+    <div class="container mx-auto text-center py-[20px] text-xl  ">
+            <p class="mb-[10px] ">© 2019 All Rights Reserved. Design by <span class="hover:text-[#ff0909] transition-colors duration-300">Free Html Templates</span></p>
+            <p>Distributed by <span class="hover:text-[#ff0909]  transition-colors duration-300"> A.Sadigzade</span></p>
+        </div>
+        </div>
+    
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="data/aboutus.js"></script>
     <script src="js/fetch.js"></script>
@@ -100,7 +157,7 @@
                 <p class="mb-[35px] text-lg text-[#666666]">${item.description}</p>
                 <button class="hover:bg-[#fe0000] font-semibold mb-[35px] text-lg text-white bg-black py-[10px] px-[20px] rounded-4xl">${item.buttonText}</button>
                 </div>
-                   <div class="col-span-2  overflow-hidden  mx-[7px] md:m-0 "  >
+                   <div class="col-span-2  overflow-hidden  h-[95%] mx-[10px] md:m-0 "  >
                                     <img src="${item.image}" class="w-full hover:scale-[1.1] transition-transform duration-300 object-cover h-full" />
                     </div>
 

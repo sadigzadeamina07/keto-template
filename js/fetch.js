@@ -10,7 +10,7 @@ function showcards(){
     alldata.map((item)=>{
 DivRoom.innerHTML+=`
 <div class="px-[15px]">
-<div class="overflow-hidden ">
+<div class="overflow-hidden w-[80%] md:w-full  m-auto">
 <img src="${item.image}" class="w-full hover:scale-[1.2] transition-transform duration-400 ease-in-out"/>
 </div>
 
