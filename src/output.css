@@ -415,8 +415,14 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -826,6 +832,13 @@
       }
     }
   }
+  .hover\:bg-\[\#ff140d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #ff140d;
+      }
+    }
+  }
   .hover\:font-semibold {
     &:hover {
       @media (hover: hover) {
@@ -855,6 +868,13 @@
       }
     }
   }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
   .hover\:transition-transform {
     &:hover {
       @media (hover: hover) {
@@ -878,6 +898,18 @@
         --tw-duration: 300ms;
         transition-duration: 300ms;
       }
+    }
+  }
+  .focus\:outline {
+    &:focus {
+      outline-style: var(--tw-outline-style);
+      outline-width: 1px;
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
     }
   }
   .md\:m-0 {
@@ -915,6 +947,11 @@
       height: 95vh;
     }
   }
+  .md\:w-fit {
+    @media (width >= 48rem) {
+      width: fit-content;
+    }
+  }
   .md\:w-full {
     @media (width >= 48rem) {
       width: 100%;
@@ -945,6 +982,21 @@
       align-items: center;
     }
   }
+  .md\:justify-baseline {
+    @media (width >= 48rem) {
+      justify-content: baseline;
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
+    }
+  }
+  .md\:gap-5 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
   .md\:gap-\[4px\] {
     @media (width >= 48rem) {
       gap: 4px;
@@ -968,6 +1020,18 @@
   .md\:gap-\[50px\] {
     @media (width >= 48rem) {
       gap: 50px;
+    }
+  }
+  .md\:md\:gap-5 {
+    @media (width >= 48rem) {
+      @media (width >= 48rem) {
+        gap: calc(var(--spacing) * 5);
+      }
+    }
+  }
+  .md\:py-\[10px\] {
+    @media (width >= 48rem) {
+      padding-block: 10px;
     }
   }
   .md\:pl-\[15px\] {
