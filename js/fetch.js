@@ -1,4 +1,5 @@
   const DivRoom = document.querySelector('.CardsOfRoom')
+  const DivGallery = document.querySelector('.CardsOfGallery')
         fetch('https://6980a5df6570ee87d50fee52.mockapi.io/keto')
         .then((res)=>res.json())
         .then ((data)=>{
@@ -21,4 +22,23 @@ DivRoom.innerHTML+=`
 
 `
     })
+}
+fetch('https://6980b9ab6570ee87d5102a27.mockapi.io/gallery')
+.then((res)=>res.json())
+.then((data)=>{
+    alldataofphotos=data
+    showphotocards()
+})
+function showphotocards(){
+alldataofphotos.map((item)=>{
+    DivGallery.innerHTML+=`
+    <div class="m-auto w-[80%] p-[15px] md:w-full ">
+ <div class="overflow-hidden">
+    <img src="${item.image}" class="hover:scale-[1.2] w-full transition-transform duration-400" />
+    </div>
+    </div>
+   
+    `
+})
+
 }

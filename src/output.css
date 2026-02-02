@@ -253,6 +253,9 @@
   .my-auto {
     margin-block: auto;
   }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
   .mr-\[10px\] {
     margin-right: 10px;
   }
@@ -316,8 +319,14 @@
   .h-full {
     height: 100%;
   }
+  .w-\[8\] {
+    width: 8;
+  }
   .w-\[20\%\] {
     width: 20%;
+  }
+  .w-\[25\%\] {
+    width: 25%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -339,6 +348,15 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .scale-\[1\.2\] {
+    scale: 1.2;
+  }
+  .scale-\[1\.\] {
+    scale: 1.;
+  }
+  .scale-\[1\] {
+    scale: 1;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -421,6 +439,9 @@
   }
   .pt-\[25px\] {
     padding-top: 25px;
+  }
+  .pt-\[60px\] {
+    padding-top: 60px;
   }
   .pt-\[85px\] {
     padding-top: 85px;
@@ -519,6 +540,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
@@ -666,6 +692,11 @@
       height: 95vh;
     }
   }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -674,6 +705,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .md\:items-center {
@@ -711,9 +747,19 @@
       padding-left: 15px;
     }
   }
+  .lg\:grid {
+    @media (width >= 64rem) {
+      display: grid;
+    }
+  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 }
