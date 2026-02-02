@@ -232,6 +232,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-\[3px\] {
     margin-inline: 3px;
   }
@@ -250,6 +253,9 @@
   .my-auto {
     margin-block: auto;
   }
+  .mr-\[10px\] {
+    margin-right: 10px;
+  }
   .mr-\[15px\] {
     margin-right: 15px;
   }
@@ -259,8 +265,17 @@
   .mr-\[40px\] {
     margin-right: 40px;
   }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .mb-\[35px\] {
     margin-bottom: 35px;
+  }
+  .mb-\[40px\] {
+    margin-bottom: 40px;
   }
   .flex {
     display: flex;
@@ -300,6 +315,24 @@
   }
   .h-full {
     height: 100%;
+  }
+  .w-\[20\%\] {
+    width: 20%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50\] {
+    width: 50;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-full {
     width: 100%;
@@ -362,6 +395,9 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[30px\] {
+    padding: 30px;
+  }
   .px-\[5px\] {
     padding-inline: 5px;
   }
@@ -398,6 +434,9 @@
   .pl-\[15px\] {
     padding-left: 15px;
   }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -430,6 +469,15 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[17px\] {
+    font-size: 17px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -446,6 +494,9 @@
   }
   .text-\[\#66666\] {
     color: #66666;
+  }
+  .text-\[\#121212\] {
+    color: #121212;
   }
   .text-\[\#666666\] {
     color: #666666;
@@ -490,6 +541,30 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-400 {
+    --tw-duration: 400ms;
+    transition-duration: 400ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
+  .duration-600 {
+    --tw-duration: 600ms;
+    transition-duration: 600ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
+  .duration-\[5000\] {
+    --tw-duration: 5000;
+    transition-duration: 5000;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
   .hover\:scale-\[1\.0\] {
     &:hover {
       @media (hover: hover) {
@@ -504,10 +579,60 @@
       }
     }
   }
+  .hover\:scale-\[1\.2\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
+  }
+  .hover\:scale-\[1\.3\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.3;
+      }
+    }
+  }
+  .hover\:scale-\[1\.5\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.5;
+      }
+    }
+  }
   .hover\:scale-\[1\.01533\] {
     &:hover {
       @media (hover: hover) {
         scale: 1.01533;
+      }
+    }
+  }
+  .hover\:bg-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #;
+      }
+    }
+  }
+  .hover\:bg-\[\#fe0000\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #fe0000;
+      }
+    }
+  }
+  .hover\:bg-\[\#fe\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #fe;
+      }
+    }
+  }
+  .hover\:font-semibold {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-semibold);
+        font-weight: var(--font-weight-semibold);
       }
     }
   }
@@ -516,9 +641,19 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .md\:mx-\[70px\] {
+    @media (width >= 48rem) {
+      margin-inline: 70px;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
     }
   }
   .md\:hidden {
@@ -576,6 +711,11 @@
       padding-left: 15px;
     }
   }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -615,6 +755,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -627,6 +771,7 @@
       --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
+      --tw-ease: initial;
     }
   }
 }

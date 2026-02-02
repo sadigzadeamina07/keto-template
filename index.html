@@ -19,7 +19,7 @@
 <body class="bg-white">
     <header class="bg-white py-[15px]">
         <div class="container mx-auto">
-            <div class="flex justify-between mx-[70px]">
+            <div class="flex justify-between md:mx-[70px]">
                 <img src="img/logo.png" class="px-[15px]" alt="">
                 <ul class="hidden md:flex uppercase font-semibold md:gap-[40px]  px-[15px] md:items-center">
                     <li><a href="">Home</a></li>
@@ -51,25 +51,30 @@
             </div>
             <div class="absolute left-0 top-0 z-10">
                 <div class="container text-white">
-                    <p>jfbrjbrjgb</p>
                 </div>
             </div>
 
         </div>
 
         </div>
-        <div class="container mx-auto py-[85px] ">
-            <div id="AboutUsSection" class="grid grid-cols-1 md:grid-cols-3 ">
-
+        <div class="container mx-auto  ">
+            <div id="AboutUsSection" class="grid grid-cols-1 md:grid-cols-3 py-[85px]">
             </div>
+            <div class="text-center">
+                <h1 class="font-bold text-4xl uppercase mb-[30px]">Our Room</h1>
+                <p class="text-[17px] mb-[40px] font-semibold text-[#121212]">Lorem Ipsum available, but the majority have suffered</p>
+         <div class="CardsOfRoom grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3">
 
+         </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="data/aboutus.js"></script>
+    <script src="js/fetch.js"></script>
     <script>
-        let aboutusdiv = document.querySelector('#AboutUsSection')
-        let swiper = new Swiper(".mySwiper", {
+        const aboutusdiv = document.querySelector('#AboutUsSection')
+        const swiper = new Swiper(".mySwiper", {
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
@@ -86,14 +91,13 @@
             <div class="col-span-1 px-[15px]">
                 <h1 class="font-bold text-4xl uppercase mb-[35px]">${item.title}</h1>
                 <p class="mb-[35px] text-lg text-[#666666]">${item.description}</p>
-                <button class="font-semibold mb-[35px] text-lg text-white bg-black py-[10px] px-[20px] rounded-4xl">${item.buttonText}</button>
+                <button class="hover:bg-[#fe0000] font-semibold mb-[35px] text-lg text-white bg-black py-[10px] px-[20px] rounded-4xl">${item.buttonText}</button>
                 </div>
                    <div class="col-span-2  overflow-hidden  mx-[7px] md:m-0 "  >
                                     <img src="${item.image}" class="w-full hover:scale-[1.1] transition-transform duration-300 object-cover h-full" />
                     </div>
 
             `
-
         })
     </script>
 </body>
