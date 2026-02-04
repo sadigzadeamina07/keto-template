@@ -42,3 +42,13 @@ alldataofphotos.map((item)=>{
 })
 
 }
+//Menu-bar
+
+function openthebar(){
+    const menu=document.querySelector('.mobilemenu')
+    const menubar=    document.querySelector('.menuBar')
+           if(menu.classList.contains('hidden')) menu.classList.remove('hidden')
+        else menu.classList.add('hidden')
+
+ 
+}

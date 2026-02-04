@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-white">
-    <header class="bg-white py-[15px]">
+    <header class="bg-white relative py-[15px]">
         <div class="container mx-auto">
             <div class="flex justify-between ">
                 <img src="img/logo.png" class="px-[15px]" alt="">
@@ -35,15 +35,32 @@
                     <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Contact
                             Us</a></li>
                 </ul>
-                <div class=" md:hidden  mr-[15px]  text-red-500  my-auto">
-                    <i class="fa-solid fa-bars text-4xl"></i>
+                <div class="menuBar md:hidden  mr-[15px]  text-red-500  my-auto">
+                    <i onclick="openthebar()" class="fa-solid fa-bars text-4xl"></i>
                 </div>
+              
             </div>
         </div>
     </header>
     <main>
 
         <div class="relative">
+              <div class="mobilemenu p-[20px]  absolute  z-50 text-white  left-[50%] hidden md:hidden  bg-[#0f1521]  -translate-x-1/2  w-[90%]">
+                       <ul class="  flex flex-col gap-2  uppercase font-semibold  px-[15px] ">
+                    <li class="text-[#fe0000]  border-b-2  border-b-[#fe0000] "><a
+                            href="">Home</a></li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">About</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Our
+                            room</a></li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Gallery</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Blog</a>
+                    </li>
+                    <li class=" hover:text-[#fe0000]  hover:border-b-2 hover:border-b-[#fe0000] "><a href="">Contact
+                            Us</a></li>
+                </ul>
+                </div>
             <div class=" swiper md:h-[95vh]  h-[65vh] mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide bg-cover  bg-center" style="background-image:url('img/banner1.jpg')"></div>
